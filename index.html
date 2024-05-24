@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS ChatBot</title>
+    <link rel="stylesheet" href="utschatbot.css">
+    
+</head>
+<body>
+    <div>
+        <p>
+            <img src="UTS.jpeg" width="100%" height="100%" alt="" class="document-image">
+        </p>
+    </div>
+
+    <!-- "Try it" button -->
+    <button class="try-it-button" onclick="tryIt()">Try it</button>
+
+    <!-- UTS ChatBot interface -->
+    <div class="chat-container" style="display: none;">
+        <div class="action-bar">
+            <h1>UTS ChatBot</h1>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message">Hello! I'm UTS ChatBot. How can I assist you today?</div>
+        </div>
+        <div class="input-box">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <input type="submit" id="send-button" value="Send">
+        </div>
+    </div>
+
+    <script src="utschatbot.js"></script>
+</body>
+</html>
