@@ -7,7 +7,7 @@ app = Flask(__name__, static_folder='.', static_url_path='')
 openai.api_key = 'api key'
 
 try:
-    with open(r'C:\Users\LocalAdmin\Desktop\SHAOYU\information.txt', 'r', encoding='utf-8') as file:
+    with open(r'information.txt', 'r', encoding='utf-8') as file:
         lines = file.readlines()
         openai.api_key = lines[0].strip()  # First line is the API key
         system_prompt = lines[1].strip()  # Second line is the system prompt
